@@ -1,0 +1,41 @@
+body {
+    background-color: #EDF1D6;
+    color: #9DC08B;
+}
+
+h1 {
+    color: #40513B;
+}
+
+.btn-dark {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #609966;
+    --bs-btn-border-color: #609966;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #9DC08B;
+    --bs-btn-hover-border-color: #9DC08B;
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #40513B;
+    --bs-btn-active-border-color: #40513B;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #212529;
+    --bs-btn-disabled-border-color: #212529;
+}
+
+.nav-link {
+    color: #40513B;
+}
+
+.nav {
+    --bs-nav-link-hover-color: #609966;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #40513B;
+}
+
+.faq-item .question {
+    color: #609966
+}
