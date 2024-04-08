@@ -1,5 +1,6 @@
 import {NextApiRequest, NextApiResponse} from 'next';
 import OpenAI from "openai";
+import { stringify } from 'querystring';
 
 
 const openai = new OpenAI({
@@ -20,7 +21,9 @@ export default async function handler(
     max_tokens: 100,
     n: 1,
   });
+  console.log(JSON.stringify(response));
   console.log("end.."+response.data);
+  console.log("hi"+response.choices[0]);
 
   return res.status(200).json({
     data: response.data
