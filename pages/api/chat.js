@@ -18,7 +18,7 @@ export default async function handler(
     messages: [{ role: "system", content: "give me around 5 story title and topic is"+prompt }], // Use note directly, no need for props
     model: "gpt-3.5-turbo",
     temperature: 0.6,
-    max_tokens: 100,
+    max_tokens: 400,
     n: 1,
   });
   const content = response.choices[0].message.content;
