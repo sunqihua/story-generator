@@ -21,11 +21,12 @@ export default async function handler(
     max_tokens: 100,
     n: 1,
   });
+  const content = json.choices[0].message.content;
   console.log(JSON.stringify(response));
   console.log("end.."+response.data);
-  console.log("hi"+response.choices[0]);
+  console.log("hi"+content);
 
   return res.status(200).json({
-    data: response.data
+    data: content
   });
 }
