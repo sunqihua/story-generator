@@ -13,7 +13,6 @@ export default async function handler(
   if (req.method !== 'POST') {
     return res.status(400).json({error: 'Invalid request'});
   }
-console.log("start..");
   const response =await openai.chat.completions.create({
     messages: [{ role: "system", content: "give me around 5 story title and topic is"+prompt }], // Use note directly, no need for props
     model: "gpt-3.5-turbo",
@@ -21,7 +20,7 @@ console.log("start..");
     max_tokens: 100,
     n: 1,
   });
-  console.log("end..");
+  console.log("end.."+response.data);
 
   return res.status(200).json({
     data: response.data
