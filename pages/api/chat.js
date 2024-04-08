@@ -21,7 +21,7 @@ export default async function handler(
     max_tokens: 100,
     n: 1,
   });
-  const content = json.choices[0].message.content;
+  const content = response.choices[0].message.content;
   console.log(JSON.stringify(response));
   console.log("end.."+response.data);
   console.log("hi"+content);
