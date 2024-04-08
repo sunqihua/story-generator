@@ -6,8 +6,7 @@ import { useState } from 'react';
 
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY || '',
-  dangerouslyAllowBrowser: true
+  apiKey: process.env.OPENAI_API_KEY || ''
 });
 function CenteredHero() {
   const [note, setNote] = useState("");
