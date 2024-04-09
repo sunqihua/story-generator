@@ -24,14 +24,9 @@ function FAQ() {
             </Link>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
-              Features
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link">
+          <Link href="/example" className="nav-link">
               Example
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <a href="#" className="nav-link active">
