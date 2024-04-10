@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <GoogleTagManager gtmId="GTM-XYZ" />
+       <GoogleTagManager gtmId="G-09WYQ49L6Q" />
       <body className={inter.className}>{children}</body>
     </html>
   );
