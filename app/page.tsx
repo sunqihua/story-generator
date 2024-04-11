@@ -1,4 +1,4 @@
-import CenteredHero from "../app/CenteredHero"
+import CenteredHero from "./CenteredHero"
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles.css';
 
