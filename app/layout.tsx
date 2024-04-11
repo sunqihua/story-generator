@@ -18,9 +18,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="G-09WYQ49L6Q" />
+      <head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-09WYQ49L6Q"></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-09WYQ49L6Q');
+                  `,
+        }}
+      />
+      </head>
       <body className={inter.className}>{children}</body>
-      <GoogleAnalytics gaId="G-09WYQ49L6Q" />
     </html>
   );
+
 }
