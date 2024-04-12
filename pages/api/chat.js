@@ -1,6 +1,5 @@
 import {NextApiRequest, NextApiResponse} from 'next';
 import OpenAI from "openai";
-import { stringify } from 'querystring';
 
 
 const openai = new OpenAI({
